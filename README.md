@@ -2,25 +2,40 @@
 
 A simple static website deployed automatically to GitHub Pages using GitHub Actions.
 
-## Project Contents
-
-- `index.html` - The static website page that says "Hello, GitHub Actions!"
-- `.github/workflows/deploy.yml` - GitHub Actions workflow that deploys the site.
-
-## Deployment Behavior
-
-- The workflow runs on every push to the `main` branch.
-- It only triggers when `index.html` is changed.
-- When triggered, it deploys the website to GitHub Pages.
-
-## GitHub Pages URL
-
-Your site will be available at:
-
-`https://<username>.github.io/gh-deployment-workflow/`
-
-Replace `<username>` with your GitHub username.
-
 ## Project URL
 
-`https://github.com/<username>/gh-deployment-workflow`
+https://roadmap.sh/projects/github-actions-deployment-workflow
+
+## Features
+
+- Automatic deployment to GitHub Pages using GitHub Actions
+- Workflow runs only when `index.html` changes
+- Static HTML website
+
+## Project Structure
+
+```
+.
+├── index.html
+├── README.md
+└── .github/
+    └── workflows/
+        └── deploy.yml
+```
+
+## Deployment
+
+Every push to the `main` branch that modifies `index.html` automatically triggers the GitHub Actions workflow, which:
+
+1. Checks out the repository
+2. Configures GitHub Pages
+3. Uploads the website files
+4. Deploys the site
+
+## Live Website
+
+https://sandeepkumar1703.github.io/gh-deployment-workflow/
+
+## Repository
+
+https://github.com/Sandeepkumar1703/gh-deployment-workflow
